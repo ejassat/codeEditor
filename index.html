@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Code Editor</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section class="container">
+            <h1><i class="fa-solid fa-code"></i> Code Editor</h1>
+
+            <div class="editor">
+                <div class="left">
+                    <label><i class="fa-brands fa-html5"></i> HTML</label>
+                    <textarea onkeyup="runCode()" id="html-code" spellcheck="false"></textarea>
+
+                    <label><i class="fa-brands fa-css3-alt"></i> CSS</label>
+                    <textarea onkeyup="runCode()" id="css-code" spellcheck="false"></textarea>
+
+                    <label><i class="fa-brands fa-square-js"></i> JavaScript</label>
+                    <textarea onkeyup="runCode()" id="js-code" spellcheck="false"></textarea>
+                </div>
+
+                <div class="right">
+                    <label><i class="fa-solid fa-display"></i> Code Output</label>
+                    <iframe id="output"></iframe>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
